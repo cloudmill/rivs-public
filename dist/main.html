@@ -2015,19 +2015,6 @@
           </div>
         </div>
       </div>
-      <div class="preloader" data-preloader="">
-        <div class="preloader__top"> 
-          <h2 class="preloader__heading title-48">загружаемся<span>.</span><span>.</span><span>.</span></h2>
-        </div>
-        <div class="preloader__container">
-          <video class="preloader__video" src="mp4/preloader.mp4" loop="loop" muted="muted" playsinline="playsinline" autoplay="autoplay" preload="metadata"></video>
-          <h2 class="preloader__title">
-              РИВС</h2>
-        </div>
-        <div class="preloader__bot"> 
-          <h3 class="preloader__num" data-preloader-num="">0%</h3>
-        </div>
-      </div>
       <header class="header black" data-header="">
         <div class="header__desktop">
           <div class="header__inner container"><a class="header__logo" href=""> 
@@ -2308,12 +2295,11 @@
         </section>
         <section class="main-page__services" data-slider-mouse="" data-parallax-section="">
           <div class="main-page__services-wrapper" data-slider-parallax="" data-parallax-content="">
-            <h2 class="main-page__services-title">
-               оборудование</h2>
+            <h2 class="main-page__services-title" data-slider-title=""><span class="main-page__services-span">оборудование</span></h2>
             <div class="main-page__services-slider"> 
               <div class="swiper-container" data-slider-id="main" data-slider-prev="1" data-slider-next="2">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide main-page__services-slide">
+                  <div class="swiper-slide main-page__services-slide" data-slide-title="оборудование">
                     <div class="main-page__services-img">
                       <picture class="picture">
                         <source class="lazyload" type="image/webp" srcset="images/service-1.webp 1x" alt="service-1.png"/>
@@ -2321,7 +2307,7 @@
                       </picture>
                     </div>
                   </div>
-                  <div class="swiper-slide main-page__services-slide">
+                  <div class="swiper-slide main-page__services-slide" data-slide-title="автоматизация">
                     <div class="main-page__services-img">
                       <picture class="picture">
                         <source class="lazyload" type="image/webp" srcset="images/service-2.webp 1x" alt="service-2.png"/>
@@ -2329,7 +2315,7 @@
                       </picture>
                     </div>
                   </div>
-                  <div class="swiper-slide main-page__services-slide">
+                  <div class="swiper-slide main-page__services-slide" data-slide-title="сервис и зип">
                     <div class="main-page__services-img">
                       <picture class="picture">
                         <source class="lazyload" type="image/webp" srcset="images/service-3.webp 1x" alt="service-3.png"/>
@@ -2337,7 +2323,7 @@
                       </picture>
                     </div>
                   </div>
-                  <div class="swiper-slide main-page__services-slide">
+                  <div class="swiper-slide main-page__services-slide" data-slide-title="Технология">
                     <div class="main-page__services-img">
                       <picture class="picture">
                         <source class="lazyload" type="image/webp" srcset="images/service-4.webp 1x" alt="service-4.png"/>
@@ -2418,7 +2404,7 @@
                         <source class="lazyload" type="image/jpeg" srcset="images/about-map.jpg 1x" alt="about-map.png"/><img class="picture__img lazyload" data-src="images/about-map.png" alt="about-map.png"/>
                       </picture>
                     </div>
-                    <div class="main-page__about-map" data-lottie-earth=""></div>
+                    <div class="main-page__about-map" data-lottie-earth="desktop"></div>
                   </div>
                 </div>
               </div>
@@ -2540,11 +2526,14 @@
                 <h3 class="title-48 main-page__about-caption">
                    Стран на карте проектов</h3>
               </div>
-              <div class="main-page__about-img">
-                <picture class="picture">
-                  <source class="lazyload" type="image/webp" srcset="images/about-map.webp 1x" alt="about-map.jpg"/>
-                  <source class="lazyload" type="image/jpeg" srcset="images/about-map.jpg 1x" alt="about-map.jpg"/><img class="picture__img lazyload" data-src="images/about-map.jpg" alt="about-map.jpg"/>
-                </picture>
+              <div class="main-page__about-container">
+                <div class="main-page__about-img">
+                  <picture class="picture">
+                    <source class="lazyload" type="image/webp" srcset="images/about-map.webp 1x" alt="about-map.png"/>
+                    <source class="lazyload" type="image/jpeg" srcset="images/about-map.jpg 1x" alt="about-map.png"/><img class="picture__img lazyload" data-src="images/about-map.png" alt="about-map.png"/>
+                  </picture>
+                </div>
+                <div class="main-page__about-map" data-lottie-earth="mobile"></div>
               </div>
             </div>
             <div class="main-page__about-grid"> 
@@ -2661,7 +2650,7 @@
                 <div class="only-desktop">
                   <div class="main-page__projects-row"> 
                     <div class="main-page__projects-col">
-                      <div class="swiper-container swiper-container--slide-width-auto swiper-container--slide-height-max" data-slider-id="projects" data-slider-prev="3" data-slider-next="4">
+                      <div class="swiper-container swiper-container--slide-width-auto swiper-container--slide-height-max" data-slider-id="projects" data-slider-prev="3" data-slider-next="4" data-projects-slider="">
                         <div class="swiper-wrapper">
                           <div class="swiper-slide main-page__projects-slide">
                             <div class="main-page__projects-bot">
